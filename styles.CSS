@@ -1,0 +1,788 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+/**Estilos para la barra de navegacion*/
+.nav-bar {
+  width: 100%;
+  height: auto;
+  background-color: #f2efea;
+}
+.nav-bar .bar-destok {
+  display: flex;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+.nav-bar .bar-destok .social-icons-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.nav-bar .bar-destok .social-icons-nav a {
+  color: #3455;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+.nav-bar .bar-destok .social-icons-nav a:hover {
+  color: #000;
+}
+.nav-bar .bar-destok .nav-component nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav-bar .bar-destok .nav-component nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.nav-bar .bar-destok .nav-component nav ul li a:hover {
+  color: #4d4c4c;
+}
+.nav-bar .bar-destok .nav-component nav ul li {
+}
+
+/**Estilos para la seccion Main*/
+.main .contanier {
+  background-color: #f2efea;
+  width: 100%;
+  height: 100vh;
+}
+.main .contanier .container-main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+}
+.container-main .pane01 {
+  width: 35%;
+  height: 100vh;
+  background-color: transparent;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-main .pane01 .fonts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-main .pane01 .fonts img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Suave transición */
+}
+.container-main .pane01 .fonts img :hover {
+  transform: scale(1.5s);
+  opacity: 0.6;
+  -webkit-transform: scale(1.5s);
+  -moz-transform: scale(1.5s);
+  -ms-transform: scale(1.5s);
+  -o-transform: scale(1.5s);
+}
+.container-main .pane02 {
+  width: 65%;
+  height: 100vh;
+  background-color: #edded3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.container-main .pane02 .content h6 {
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+}
+.container-main .pane02 .content h3 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.container-main .pane02 .content .btns {
+  font-size: 14px;
+  gap: 10px;
+}
+/*para los botones del main*/
+.container-main .pane02 .btns #btnContact {
+  background-color: transparent;
+  padding: 15px 30px;
+  border: 1px solid black;
+  color: black;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.container-main .pane02 .btns #Download_CV {
+  background-color: #2c2d36;
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.container-main .pane02 .btns #btnContact:hover {
+  background-color: #42434a;
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+}
+.container-main .pane02 .btns #Download_CV:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+  border: 1px solid rgb(68, 67, 67);
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+}
+
+/**ESTILOS PARA LA SECCION DE WELCOME*/
+.content-Welcome {
+  width: 100%;
+  height: auto;
+  background-color: #f2efea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.content-Welcome .Welcome-card {
+  width: 70%;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.content-Welcome .Welcome-card .welcome-header .logo-welc img {
+  width: 70px;
+  height: auto;
+}
+
+.content-Welcome .Welcome-card .welcome-header .title-welcome {
+  font-size: 14px;
+}
+.content-Welcome .Welcome-card .welcome-text {
+  font-size: 26px;
+}
+.content-Welcome .Welcome-card .welcome-footer {
+  font-size: 14px;
+}
+/**ESTILOS PARA LA SECCION DE LOVEHOME*/
+.Love-Content {
+  width: 100%;
+  height: auto;
+}
+.Love-Content .contenido-Global {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  background-color: #f2efea;
+}
+.Love-Content .contenido-Global .Cuerp-Home {
+  width: 80%;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.Love-Content .contenido-Global .Cuerp-Home .content-We {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+  background-color: transparent;
+}
+.Love-Content .contenido-Global .Cuerp-Home .header-Hom .title-header {
+  text-align: center;
+  padding: 20px 20px;
+}
+.Love-Content .contenido-Global .Cuerp-Home .header-Hom .title-header h5 {
+  font-size: 31px;
+}
+/*estilos para la imagen*/
+.Love-Content .contenido-Global .Cuerp-Home .content-We .pane-img img {
+  width: 90%;
+  height: auto;
+}
+.Love-Content .contenido-Global .Cuerp-Home .content-We .pane-img {
+  background-color: transparent;
+  width: 40%;
+}
+.Love-Content .contenido-Global .Cuerp-Home .content-We .pane-We {
+  background-color: transparent;
+  width: 62%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Love-Content .contenido-Global .Cuerp-Home .content-We .pane-We article {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 30px;
+}
+.Love-Content
+  .contenido-Global
+  .Cuerp-Home
+  .content-We
+  .pane-We
+  article
+  .center-Content {
+  width: 90%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 20px;
+  background-color: transparent;
+}
+.Love-Content
+  .contenido-Global
+  .Cuerp-Home
+  .content-We
+  .pane-We
+  article
+  .header-txt {
+  text-align: left;
+  font-size: 35px;
+}
+.Love-Content
+  .contenido-Global
+  .Cuerp-Home
+  .content-We
+  .pane-We
+  article
+  .content-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+}
+.Love-Content
+  .contenido-Global
+  .Cuerp-Home
+  .content-We
+  .pane-We
+  article
+  .content-txt
+  .element
+  strong {
+  text-align: left;
+}
+.Love-Content
+  .contenido-Global
+  .Cuerp-Home
+  .content-We
+  .pane-We
+  article
+  .content-txt
+  .element
+  h4 {
+  text-align: left;
+}
+.Love-Content
+  .contenido-Global
+  .Cuerp-Home
+  .content-We
+  .pane-We
+  article
+  .content-txt
+  .element
+  button {
+  border: none;
+  background-color: #2c2d36;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.Love-Content
+  .contenido-Global
+  .Cuerp-Home
+  .content-We
+  .pane-We
+  article
+  .content-txt
+  .element
+  button:hover {
+  background-color: #000;
+}
+/*socials*/
+.Love-Content
+  .contenido-Global
+  .Cuerp-Home
+  .content-We
+  .pane-We
+  article
+  .center-Content
+  .footer-txt
+  .redes-social-txt {
+  margin: 10px;
+}
+.Love-Content
+  .contenido-Global
+  .Cuerp-Home
+  .content-We
+  .pane-We
+  article
+  .center-Content
+  .footer-txt
+  .redes-social-txt
+  a {
+  color: rgb(38, 38, 38);
+  margin: 5px;
+}
+.Love-Content
+  .contenido-Global
+  .Cuerp-Home
+  .content-We
+  .pane-We
+  article
+  .center-Content
+  .footer-txt
+  .redes-social-txt
+  a:hover {
+  color: #000;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+/**ESTILOS PARA LA SECCION DE Toblox*/
+.tolblox-Ican {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9b5af;
+}
+.tolblox-Ican .content-Ican {
+  width: 70%;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*para las card de los lenguajes*/
+.tolblox-Ican .content-Ican .content-Icans .cards {
+  background-color: transparent;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.tolblox-Ican .content-Ican .content-Icans .cards .card {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
+  -moz-transition: transform 0.3s ease, opacity 0.3s ease;
+  -ms-transition: transform 0.3s ease, opacity 0.3s ease;
+  -o-transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.tolblox-Ican .content-Ican .content-Icans .cards .card:hover {
+  transform: scale(1.5s);
+  opacity: 0.4;
+  -webkit-transform: scale(1.5s);
+  -moz-transform: scale(1.5s);
+  -ms-transform: scale(1.5s);
+  -o-transform: scale(1.5s);
+}
+/*para el header-Ican*/
+.tolblox-Ican .content-Ican .header-Ican {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tolblox-Ican .content-Ican .header-Ican h5 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.tolblox-Ican .content-Ican .header-Ican p {
+  font-family: "Mada", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 20px;
+}
+.tolblox-Ican .content-Ican .header-Ican h3 {
+  color: #1c2273;
+  font-size: 42px;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*para el footer*/
+.tolblox-Ican .content-Ican .footer-Ican {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tolblox-Ican .content-Ican .footer-Ican strong {
+  color: #7689d8;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 31px;
+}
+.tolblox-Ican .content-Ican .footer-Ican p {
+  font-size: 20px;
+  font-family: "Mada", sans-serif;
+}
+
+/**ESTILOS PARA LA SECCION DE WORK PROYETCS*/
+.Proyects {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebe9e7;
+}
+/*title*/
+/* CSS */
+/* Oculta el elemento inicialmente */
+.fade-in-section {
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Clase que aplica el efecto de aparecer desde la izquierda */
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.Proyects .title {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+.title {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.Proyects .title h6 {
+  font-size: 20px;
+  font-weight: normal;
+}
+/*para proyect cada una*/
+.Proyects .proyects-content {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.Proyects .proyects-content .proyect {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Proyects .proyects-content .proyect .pane-02-Content .title-pane-02 h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.Proyects .proyects-content .proyect .pane-02-Content .pane-02-content p {
+  font-size: 20px;
+  color: #505053;
+}
+.Proyects .proyects-content .proyect .pane-02-Content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+.Proyects .proyects-content .proyect .pane-02-Content .buttonClick button {
+  padding: 13px 55px;
+  border: none;
+  background-color: rgb(139, 14, 235);
+  margin: 10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  font-size: 17px;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+  cursor: pointer;
+}
+.Proyects
+  .proyects-content
+  .proyect
+  .pane-02-Content
+  .buttonClick
+  button:hover {
+  transform: translatex(20px);
+  -webkit-transform: translatex(20px);
+  -moz-transform: translatex(20px);
+  background-color: rgb(148, 9, 255);
+  color: white;
+}
+
+/**ESTILOS PARA LA SECCION DE Contacts*/
+.contact-form {
+  width: 100%;
+  height: auto;
+  background-color: #f0f0f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .center-content {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contact-form .center-content .header-contact h4 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.contact-form .center-content p {
+  font-size: 18px;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.contact-form .center-content .header-contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+.contact-form .center-content .content-contact {
+  width: 100%;
+  background-color: brown;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  text-align: left;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.contact-form .center-content .content-contact form {
+  width: 70%;
+  height: auto;
+}
+.contact-form .center-content .content-contact form .form-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contact-form .center-content .content-contact form .form-content .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: transparent;
+}
+.contact-form .center-content .content-contact form .form-content .text label {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(73, 75, 77);
+}
+.contact-form .center-content .content-contact form .form-content .text input {
+  width: 100%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(94, 94, 94, 0.333);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.contact-form
+  .center-content
+  .content-contact
+  form
+  .form-content
+  .text
+  textarea {
+  padding: 90px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(94, 94, 94, 0.333);
+}
+/*para el boton*/
+.contact-form .center-content .content-contact form .form-content .butn {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-form .center-content .content-contact form .form-content .butn button {
+  padding: 15px 60px;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: blueviolet;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.contact-form
+  .center-content
+  .content-contact
+  form
+  .form-content
+  .butn
+  button:hover {
+  background-color: rgb(117, 2, 224);
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+}
+/**ESTILOS PARA LA SECCION DEL FOOTER*/
+.footer-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content .content-we {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.footer-content .content-we .pane-01-footer {
+  width: 50%;
+  height: auto;
+}
+.footer-content .content-we .pane-02-footer {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer-content .content-we .pane-02-footer .socials {
+  display: flex;
+  text-align: center;
+  gap: 20px;
+}
+.footer-content .footer-final {
+  text-align: center;
+}
+.footer-content .content-we .pane-02-footer .socials a {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 23px;
+}
+.footer-content .content-we .pane-02-footer .socials a:hover {
+  color: #000;
+  font-weight: bold;
+}

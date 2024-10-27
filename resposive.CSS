@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+/**ESTILOS RESPONSIVOS DESTOCK*/
+/*
+*
+*
+*/
+/**ESTILOS PARA LA BARRA DE NAVEGACION*/
+@media screen and (max-width: 1024px) and (min-width: 861px) {
+  .nav-bar .bar-destok {
+    display: flex;
+  }
+  /*estilos para el main*/
+  .main .contanier {
+    background-color: #f2efea;
+    width: 100%;
+    height: 55vh;
+  }
+  .main .contanier .container-main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    height: 55vh;
+  }
+  .container-main .pane01 {
+    width: 40%;
+    height: 50vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+  }
+  .container-main .pane01 .fonts {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .container-main .pane01 .fonts img {
+    width: 100%;
+    height: auto;
+  }
+  .container-main .pane02 {
+    width: 65%;
+    height: 50vh;
+    background-color: #edded3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .nav-bar .bar-movile {
+    display: none;
+  }
+}
+
+/*
+*
+*/
+/**ESTILOS PARA EL MAIN (home)*/
+@media screen and (max-width: 768px) {
+  .main .contanier {
+    width: 100%;
+    height: auto;
+  }
+  .main .contanier .container-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .container-main .pane01 {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    background-color: transparent;
+  }
+  .container-main .pane01 .fonts {
+    justify-content: center;
+    text-align: center;
+  }
+  .container-main .pane01 .fonts img {
+    width: 50%;
+    height: auto;
+    border-radius: 3px;
+  }
+  .container-main .pane02 {
+    width: 100%;
+    height: auto;
+    background-color: #edded3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container-main .pane02 .content h6 {
+    font-size: 10px;
+    font-family: "Jost", sans-serif;
+  }
+  .container-main .pane02 .content h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+  }
+}
+/**
+*
+*/
+/**ESTILOS RESPONSIVOS MOVILES*/
+/*
+*
+*
+*/
+@media screen and (max-width: 430px) {
+  .nav-bar .bar-destok {
+    display: none; /*ocultamos el nav de destock*/
+  }
+}
+/**estilos para el nav-moviles*/
+@media screen and (max-width: 430px) {
+  .nav-bar .bar-movile {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+  }
+  .nav-bar .menu-Movile #btnMenu-Movile {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .nav-bar .menu-Movile #btnMenu-Movile svg:hover {
+    color: rgb(61, 59, 59);
+  }
+  /*estilos para las redes sociales*/
+  .nav-bar .bar-movile .social-icons-nav {
+    display: flex;
+    gap: 10px;
+  }
+  .nav-bar .bar-movile .social-icons-nav a i {
+    color: rgb(38, 37, 37);
+  }
+  .nav-bar .bar-movile .social-icons-nav a i:hover {
+    background-color: rgb(196, 173, 144);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+}
+/**estilos para la seccion de LoveHome*/
+@media screen and (max-width: 430px) {
+  .Love-Content {
+    width: 100%;
+    height: auto;
+  }
+  .Love-Content .contenido-Global {
+    width: 100%;
+    height: auto;
+    background-color: #f2efea;
+  }
+  .Love-Content .contenido-Global .Cuerp-Home {
+    background-color: transparent;
+    height: auto;
+  }
+  .Love-Content .contenido-Global .Cuerp-Home .header-Hom .title-header {
+    text-align: center;
+  }
+  .Love-Content .contenido-Global .Cuerp-Home .content-We {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .Love-Content .contenido-Global .Cuerp-Home .content-We .pane-img {
+    width: 100%;
+    height: auto;
+  }
+  .Love-Content
+    .contenido-Global
+    .Cuerp-Home
+    .content-We
+    .pane-We
+    article
+    .content-txt {
+    font-family: "Jost", serif;
+  }
+  .Love-Content
+    .contenido-Global
+    .Cuerp-Home
+    .content-We
+    .pane-We
+    article
+    .center-Content
+    .element01 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Love-Content
+    .contenido-Global
+    .Cuerp-Home
+    .content-We
+    .pane-We
+    article
+    .center-Content
+    .header-txt
+    h2 {
+    font-size: 30px;
+    font-family: "Jost", serif;
+  }
+}
+/**estilos para la seccion de Toblox*/
+@media screen and (max-width: 430px) {
+  .tolblox-Ican {
+    width: 100%;
+    height: auto;
+  }
+  /*para el header-Ican*/
+  .tolblox-Ican .content-Ican .header-Ican {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .tolblox-Ican .content-Ican .header-Ican h5 {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .tolblox-Ican .content-Ican .header-Ican p {
+    font-family: "Mada", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 12px;
+  }
+  .tolblox-Ican .content-Ican .header-Ican h3 {
+    color: #1c2273;
+    font-size: 32px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /*para el footer*/
+  .tolblox-Ican .content-Ican .footer-Ican {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tolblox-Ican .content-Ican .footer-Ican strong {
+    color: #7689d8;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+  }
+  .tolblox-Ican .content-Ican .footer-Ican p {
+    font-size: 12px;
+    font-family: "Mada", sans-serif;
+  }
+  /*para el ancho*/
+  .tolblox-Ican .content-Ican {
+    width: 80%;
+    height: auto;
+  }
+  /*para las cards*/
+  .tolblox-Ican .content-Ican .content-Icans .cards {
+    background-color: transparent;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/**estilos para la seccion de Work Poryects*/
+@media screen and (max-width: 430px) {
+  .Proyects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .Proyects .title {
+    text-align: center;
+    width: 90%;
+    height: auto;
+  }
+  .Proyects .proyect-content {
+    width: 90%;
+    height: auto;
+  }
+  .Proyects .proyects-content .proyect {
+    display: flex;
+    flex-direction: column;
+  }
+  .Proyects .proyects-content .proyect .pane-01-Img {
+    width: 100%;
+    height: auto;
+  }
+  .Proyects .proyects-content .proyect .pane-01-Img img {
+    width: 100%;
+    height: auto;
+  }
+  .Proyects .proyects-content .proyect .pane-02-Content {
+    text-align: left;
+  }
+}
+/**estilos para la seccion de Contact*/
+@media screen and (max-width: 430px) {
+  .contact-form .center-content .content-contact form .form-content .butn {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+  }
+}
+/**estilos para la seccion del footer*/
+@media screen and (max-width: 430px) {
+  .footer-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #141313;
+    color: white;
+  }
+  .footer-content .content-we {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-content .content-we .pane-01-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .footer-content .content-we .pane-02-footer {
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .footer-content .content-we .pane-02-footer .socials a {
+    color: white;
+  }
+  .footer-content .content-we .pane-02-footer .socials a:hover {
+    color: rgb(92, 93, 94);
+  }
+}
+/**
+*
+*/
+/**ESTILOS RESPONSIVOS TABLETS*/
+/*
+*
+*
+*/
+/**RESPOSIVO NAV LAPTOPS*/
+@media screen and (max-width: 860px) and (min-width: 435px) {
+  .nav-bar .bar-destok {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .nav-bar .bar-destok .nav-component {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .nav-bar .bar-destok .social-icons-nav {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    justify-content: center;
+  }
+  .nav-bar .bar-destok .social-icons-nav a i {
+    color: #636261;
+  }
+  .nav-bar .bar-destok .social-icons-nav a i:hover {
+    color: #000000;
+  }
+}
+/**RESPOSIVO NAV LAPTOPS SECCION MAIN*/
+@media screen and (max-width: 860px) and (min-width: 435px) {
+  .main .contanier {
+    width: 100%;
+    height: auto;
+  }
+  .main .contanier .container-main {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .container-main .pane01 {
+    width: 60%;
+    height: auto;
+    background-color: transparent;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .container-main .pane01 .fonts img {
+    width: 90%;
+    height: auto;
+  }
+
+  .container-main .pane02 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: auto;
+    background-color: #edded3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+/**RESPOSIVO NAV LAPTOPS SECCION WELCOME*/
+@media screen and (max-width: 860px) and (min-width: 435px) {
+  .content-Welcome {
+    width: 100%;
+    height: auto;
+  }
+  .content-Welcome .Welcome-card {
+    padding-top: 0;
+  }
+}
+
+/**RESPOSIVO NAV LAPTOPS SECCION Tobloxs*/
+@media screen and (max-width: 860px) and (min-width: 435px) {
+  /*para las cards*/
+  .tolblox-Ican .content-Ican .content-Icans .cards {
+    background-color: transparent;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/**estilos para la seccion de Work Poryects*/
+@media screen and (max-width: 860px) and (min-width: 435px) {
+  .Proyects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .Proyects .title {
+    text-align: center;
+    width: 90%;
+    height: auto;
+  }
+  .Proyects .title h2 {
+    font-size: 25px;
+  }
+  .Proyects .proyect-content {
+    width: 90%;
+    height: auto;
+  }
+  .Proyects .proyects-content .proyect {
+    display: flex;
+    flex-direction: column;
+  }
+  .Proyects .proyects-content .proyect .pane-01-Img {
+    width: 100%;
+    height: auto;
+  }
+  .Proyects .proyects-content .proyect .pane-01-Img img {
+    width: 100%;
+    height: auto;
+  }
+  .Proyects .proyects-content .proyect .pane-02-Content {
+    text-align: left;
+  }
+  .Proyects .proyects-content .proyect .pane-02-Content .title-pane-02 {
+    font-size: 25px;
+  }
+  .Proyects .proyects-content .proyect .pane-02-Content .buttonClick button {
+    padding: 10px 20px;
+  }
+}
